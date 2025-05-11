@@ -69,7 +69,7 @@ def back_prop(x, y, w1, w2, alpha):
 	a2 = sigmoid(z2)
 	
 	# error in output layer
-	d2 =(a2-y)
+	d2 =(a2-y) # dl/da2
 	d1 = np.multiply((w2.dot((d2.transpose()))).transpose(), 
 								(np.multiply(a1, 1-a1)))
 	# Gradient for w1 and w2
@@ -85,7 +85,7 @@ def back_prop(x, y, w1, w2, alpha):
 w1 = generate_wt(30, 5)
 w2 = generate_wt(5, 3)
 
-print(w1, "\n\n", w2)
+
 
 def train(x, Y, w1, w2, alpha = 0.01, epoch = 10):
 	acc =[]
@@ -101,8 +101,9 @@ def train(x, Y, w1, w2, alpha = 0.01, epoch = 10):
 		losss.append(sum(l)/len(x))
 	return(acc, losss, w1, w2)
 
-acc, losss, w1, w2 = train(x, y, w1, w2, 0.1, 100)
+acc, losss, w1, w2 = train(x, y, w1, w2, 0.2, 100)
 
+print(w1, "\n\n", w2)
 # plotting accuracy
 plt1.plot(acc)
 plt1.ylabel('Accuracy')
