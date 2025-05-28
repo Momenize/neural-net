@@ -1,4 +1,6 @@
 .idea/
 .venv/
 dataset/
-
+nohup.out
+nnetworks/
+images/
