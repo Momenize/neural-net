@@ -1,4 +1,4 @@
-[Source Repository][https://github.com/alaminanik/PCA-Based-Face-Recognition/tree/master#]
+## [Source Repository](https://github.com/alaminanik/PCA-Based-Face-Recognition/tree/master#)
 # PCA-Based-face-Recognition
 
 <p>It's hard to find a real-life implementation of this old algorithm nowadays, but other research was based on this. Furthermore, this algorithm's simplistic and effective nature makes it very beautiful.</p>
